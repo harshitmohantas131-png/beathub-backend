@@ -9,6 +9,12 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res) => {
+  res.json({
+    message: "Welcome to BeatHub API Production Server 🚀",
+    documentation: "/api-docs"
+  });
+});
 const songRoutes = require("./routes/song.routes");
 app.use("/api/songs", songRoutes);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
