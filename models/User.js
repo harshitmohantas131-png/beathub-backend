@@ -18,6 +18,8 @@ const userSchema = new mongoose.Schema(
       required: true
       // Hashing can be done latter
     },
+    loginCount: {type: Number, default: 0},
+    createdAt: { type: Date, default: Date.now},
     //Relationship: User -> liked Songs
     likedSongs: [{
       type: mongoose.Schema.Types.ObjectId, ref: 'Song'
