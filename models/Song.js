@@ -10,6 +10,9 @@ const songSchema = new mongoose.Schema(
       type: Number,
       required: true
     },
+    genre: { type: String},
+    releaseYear: {type: Number},
+    plays: { type: Number, default: 0},
     //Relationship: Song -> Artist
     artist: {
       type: mongoose.Schema.Types.ObjectId,
