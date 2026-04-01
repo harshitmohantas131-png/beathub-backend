@@ -24,6 +24,8 @@ app.use("/api/analytics",analyticsRoutes);
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+const userRoutes = require("./routes/users.routes");
+app.use("/api/users", userRoutes);
 
 
 // Global Error Handler
