@@ -9,6 +9,7 @@ const albumSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
+  coverImage: {type: String},
   //Relationship: Album -> Artist
   artist: {
     type:mongoose.Schema.Types.ObjectId,

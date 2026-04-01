@@ -9,7 +9,7 @@ const artistSchema = new mongoose.Schema({
   genre: {
     type: String,
     required: true,
-    enum: ['Pop', 'Rock', 'HipHop', 'Jazz', 'Electronic']
+    enum: ['Pop', 'Rock', 'Hip Hop', 'Jazz', 'Electronic']
   },
   bio: {
     type: String,

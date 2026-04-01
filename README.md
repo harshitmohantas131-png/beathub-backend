@@ -15,4 +15,19 @@ node scripts/seed.js
 
 If the script logs "Seeding Complete!", the database has been populated successfully.
 
+Live Deployment URL:
+https://beathub-backend-1.onrender.com
 
+Swagger Documentation URL:
+https://beathub-backend-1.onrender.com/api-docs
+
+GitHub Repository:
+https://github.com/harshitmohantas131-png/beathub-backend
+
+Required Environment Variables:
+PORT
+MONGO_URI
+
+Local Setup:
+npm install
+npm start
